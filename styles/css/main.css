@@ -1,0 +1,214 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #383838;
+  padding: 0 10%;
+}
+#header > div > img {
+  max-width: 100%;
+  height: auto;
+}
+#header > ul {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+  list-style: none;
+}
+#header > ul > li {
+  color: #fff;
+  line-height: 100%;
+}
+#header > ul > li:hover > a::after {
+  width: 100%;
+}
+#header > ul > li > a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+#header > ul > li > a.active::after {
+  width: 100%;
+}
+#header > ul > li > a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  top: calc(100% + 2px);
+  left: 0;
+  background-color: #E7FF6E;
+  transition: width 0.4s;
+}
+
+#one {
+  height: 100vh;
+  background-color: #383838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#one > h1 {
+  font-size: 60px;
+  max-width: 38%;
+  color: white;
+}
+
+#two {
+  padding: 160px 67px;
+}
+#two > main > h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #383838;
+  text-shadow: -2px 2px #678EAA, 2px -2px #E7FF6E;
+  text-align: center;
+}
+#two > main .boxes {
+  margin-top: 62px;
+}
+#two > main .box {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  max-width: calc(33.3333333333% - 34px);
+  width: 100%;
+  text-align: center;
+}
+#two > main .box > strong {
+  text-shadow: -1px 1px #678EAA, 1px -1px #E7FF6E;
+  font-size: 32px;
+  font-weight: 700;
+  color: #383838;
+}
+#two > main .box > p {
+  font-size: 18px;
+  color: #383838;
+  font-weight: 700;
+  text-align: justify;
+  text-align-last: left;
+}
+
+#three {
+  background-color: #E2E0B1;
+  padding: 160px 67px;
+}
+#three > main > h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #383838;
+  text-shadow: -2px 2px #678EAA, 2px -2px #E7FF6E;
+  text-align: center;
+}
+#three > main .infos {
+  margin-top: 58px;
+}
+#three > main .info {
+  max-width: calc(33.3333333333% - 34px);
+  width: 100%;
+}
+#three > main .info > header {
+  border-bottom: 5px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+#three > main .info > main {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  text-align: center;
+}
+#three > main .info > main > strong {
+  text-shadow: -1px 1px #678EAA, 1px -1px #E7FF6E;
+  font-size: 26px;
+  font-weight: 700;
+  color: #383838;
+}
+#three > main .info > main > p {
+  font-size: 18px;
+  color: #383838;
+  font-weight: 700;
+  text-align: justify;
+  text-align-last: left;
+}
+
+#four {
+  background-color: #383838;
+  padding: 160px 67px;
+}
+#four > main > h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: -2px 2px #678EAA, 2px -2px #E7FF6E;
+  text-align: center;
+}
+#four > main form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#four > main form button {
+  width: 100%;
+  height: 55px;
+  background-color: #E7FF6E;
+  color: #383838;
+  border: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+#four > main form button:active {
+  opacity: 0.7;
+}
+#four > main form > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#four > main form > div > div {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  gap: 6px;
+}
+#four > main form > div > div.textarea {
+  height: 210px;
+}
+#four > main form > div > div > label {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+#four > main form > div > div > input, #four > main form > div > div textarea {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid transparent;
+}
+#four > main form > div > div > input:focus, #four > main form > div > div textarea:focus {
+  border-color: #678EAA;
+}
+#four > main form > div > div > textarea {
+  min-width: calc(100% - 16px);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer {
+  background-color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

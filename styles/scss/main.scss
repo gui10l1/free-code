@@ -1,0 +1,318 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #383838;
+
+  padding: 0 10%;
+
+  > div {
+    > img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+
+  > ul {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 50px;
+
+    list-style: none;
+
+    > li {
+      color: #fff;
+
+      line-height: 100%;
+
+      &:hover {
+        > a {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+
+      > a {
+        display: block;
+
+        color: inherit;
+
+        text-decoration: none;
+
+        position: relative;
+
+        &.active::after {
+          width: 100%;
+        }
+
+        &::after {
+          content: '';
+
+          position: absolute;
+
+          height: 2px;
+          width: 0%;
+
+          top: calc(100% + 2px);
+          left: 0;
+
+          background-color: #E7FF6E;
+
+          transition: width .4s;
+        }
+      }
+    }
+  }
+}
+
+#one {
+  height: 100vh;
+
+  background-color: #383838;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > h1 {
+    font-size: 60px;
+    max-width: 38%;
+
+    color: white;
+  }
+}
+
+#two {
+  padding: 160px 67px;
+
+  > main {
+    > h1 {
+      font-size: 70px;
+      font-weight: 700;
+
+      color: #383838;
+
+      text-shadow: 
+        -2px 2px #678EAA,
+        2px -2px #E7FF6E;
+
+      text-align: center;
+    }
+
+    .boxes {
+      margin-top: 62px;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+
+      max-width: calc(100% / 3 - 34px);
+      width: 100%;
+
+      text-align: center;
+
+      > strong {
+        text-shadow: 
+          -1px 1px #678EAA,
+          1px -1px #E7FF6E;
+
+        font-size: 32px;
+        font-weight: 700;
+
+        color: #383838;
+      }
+
+      > p {
+        font-size: 18px;
+        color: #383838;
+        font-weight: 700;
+
+        text-align: justify;
+        text-align-last: left;
+      }
+    }
+  }
+}
+
+#three {
+  background-color: #E2E0B1;
+  padding: 160px 67px;
+
+  > main {
+    > h1 {
+      font-size: 70px;
+      font-weight: 700;
+
+      color: #383838;
+
+      text-shadow: 
+        -2px 2px #678EAA,
+        2px -2px #E7FF6E;
+
+      text-align: center;
+    }
+
+    .infos {
+      margin-top: 58px;
+    }
+
+    .info {
+      max-width: calc(100% / 3 - 34px);
+      width: 100%;
+
+      > header {
+        border-bottom: 5px solid #000;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-bottom: 35px;
+      }
+
+      > main {
+        margin-top: 34px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        text-align: center;
+
+        > strong {
+          text-shadow: 
+            -1px 1px #678EAA,
+            1px -1px #E7FF6E;
+
+          font-size: 26px;
+          font-weight: 700;
+
+          color: #383838;
+        }
+
+        > p {
+          font-size: 18px;
+          color: #383838;
+          font-weight: 700;
+
+          text-align: justify;
+          text-align-last: left;
+        }
+      }
+    }
+  }
+}
+
+#four {
+  background-color: #383838;
+  padding: 160px 67px;
+
+  > main {
+    > h1 {
+      font-size: 100px;
+      font-weight: 700;
+
+      color: #fff;
+
+      text-shadow: 
+        -2px 2px #678EAA,
+        2px -2px #E7FF6E;
+
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      button {
+        width: 100%;
+
+        height: 55px;
+
+        background-color: #E7FF6E;
+        color: #383838;
+
+        border: 0;
+
+        font-size: 24px;
+        font-weight: 700;
+
+        &:active {
+          opacity: .7;
+        }
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+
+        gap: 8px;
+
+        > div {
+          flex: 1;
+
+          width: 100%;
+
+          display: flex;
+          flex-direction: column;
+
+          height: 70px;
+
+          gap: 6px;
+
+          &.textarea {
+            height: 210px;
+          }
+
+          > label {
+            font-size: 16px;
+            font-weight: 500;
+
+            color: white;
+          }
+
+          > input, textarea {
+            flex: 1;
+
+            padding: 8px;
+
+            border: 1px solid transparent;
+
+            &:focus {
+              border-color: #678EAA;
+            }
+          }
+
+          > textarea {
+            min-width: calc(100% - 16px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer {
+  background-color: #fff;
+
+  padding: 16px;
+  
+  text-align: center;
+}
