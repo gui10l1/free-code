@@ -67,6 +67,24 @@
   text-shadow: -2px 2px #678EAA, 2px -2px #E7FF6E;
   text-align: center;
 }
+#two > main .tabelas {
+  text-align: justify;
+  padding-top: 40px;
+}
+#two > main .titulos {
+  text-shadow: -1px 1px #678EAA, 1px -1px #E7FF6E;
+  font-size: 32px;
+  font-weight: 700;
+  color: #383838;
+  text-align: center;
+}
+#two > main .tabela {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+#two > main th, #two > main td {
+  padding: 20px;
+}
 #two > main .boxes {
   margin-top: 62px;
 }
@@ -152,6 +170,28 @@
   text-shadow: -2px 2px #678EAA, 2px -2px #E7FF6E;
   text-align: center;
 }
+#four > main > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: white;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+#four > main > ul > li {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+#four > main > ul > li + li {
+  margin-left: 25px;
+  padding-left: 25px;
+  border-left: 5px solid #E7FF6E;
+  font-size: 18px;
+}
 #four > main form {
   display: flex;
   flex-direction: column;
@@ -204,7 +244,7 @@
 
 .row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -212,6 +252,10 @@
   background-color: #fff;
   padding: 16px;
   text-align: center;
+}
+
+#contactForm {
+  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
