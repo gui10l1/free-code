@@ -67,47 +67,24 @@
   text-shadow: -2px 2px #678EAA, 2px -2px #E7FF6E;
   text-align: center;
 }
-#two > main .tabelas {
-  text-align: justify;
-  padding-top: 40px;
-}
-#two > main .titulos {
-  text-shadow: -1px 1px #678EAA, 1px -1px #E7FF6E;
-  font-size: 32px;
-  font-weight: 700;
-  color: #383838;
+#two > main > div {
   text-align: center;
+  padding-top: 22px;
 }
-#two > main .tabela {
-  border-collapse: separate;
-  border-spacing: 10px;
-}
-#two > main th, #two > main td {
-  padding: 20px;
-}
-#two > main .boxes {
-  margin-top: 62px;
-}
-#two > main .box {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-  max-width: calc(33.3333333333% - 34px);
-  width: 100%;
-  text-align: center;
-}
-#two > main .box > strong {
-  text-shadow: -1px 1px #678EAA, 1px -1px #E7FF6E;
-  font-size: 32px;
-  font-weight: 700;
+#two > main > div > p {
+  text-align: left;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  font-weight: 300;
   color: #383838;
 }
-#two > main .box > p {
-  font-size: 18px;
-  color: #383838;
-  font-weight: 700;
-  text-align: justify;
-  text-align-last: left;
+#two > main > div > p + p {
+  margin-top: 32px;
+}
+#two > main > div > img {
+  margin-top: 83px;
 }
 
 #three {
@@ -256,6 +233,67 @@
 
 #contactForm {
   display: none !important;
+}
+
+.addon {
+  padding: 0 20%;
+  padding: 115px;
+  text-align: center;
+}
+.addon > p {
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 40%;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.addon > div {
+  margin-top: 41px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 130px;
+}
+.addon > div > div {
+  max-width: 517px;
+  width: 100%;
+}
+.addon > div > div > header {
+  padding-bottom: 55px;
+  border-bottom: 5px solid #000;
+}
+.addon > div > div > main {
+  margin-top: 33px;
+}
+.addon > div > div > main > h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.addon > div > div > main > p {
+  text-align: justify;
+  text-align-last: left;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#addon-one {
+  background-color: #E2E0B1;
+  color: #383838;
+}
+
+#addon-two {
+  background-color: #383838;
+  color: #FFFFFF;
+}
+#addon-two > div > div > header {
+  border-bottom-color: white;
+}
+
+#addon-three {
+  background-color: white;
+  color: #383838;
 }
 
 /*# sourceMappingURL=main.css.map */

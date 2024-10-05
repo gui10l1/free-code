@@ -106,60 +106,31 @@
       text-align: center;
     }
 
-    .tabelas{
-      text-align: justify;
-      padding-top: 40px;
-    }
-
-    .titulos {
-      text-shadow: -1px 1px #678EAA, 1px -1px #E7FF6E;
-      font-size: 32px;
-      font-weight: 700;
-      color: #383838;
+    > div {
       text-align: center;
-    }
+      
+      padding-top: 22px;
 
-    .tabela {
-      border-collapse: separate; 
-      border-spacing: 10px; 
-    }
+      > p {
+        text-align: left;
 
-    th, td {
-      padding: 20px; 
-    }
+        max-width: 70%;
 
-    .boxes {
-      margin-top: 62px;
-    }
+        margin-left: auto;
+        margin-right: auto;
 
-    .box {
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-
-      max-width: calc(100% / 3 - 34px);
-      width: 100%;
-
-      text-align: center;
-
-      > strong {
-        text-shadow: 
-          -1px 1px #678EAA,
-          1px -1px #E7FF6E;
-
-        font-size: 32px;
-        font-weight: 700;
+        font-size: 25px;
+        font-weight: 300;
 
         color: #383838;
       }
 
-      > p {
-        font-size: 18px;
-        color: #383838;
-        font-weight: 700;
+      > p + p {
+        margin-top: 32px;
+      }
 
-        text-align: justify;
-        text-align-last: left;
+      > img {
+        margin-top: 83px;
       }
     }
   }
@@ -378,4 +349,88 @@
 
 #contactForm {
   display: none !important;
+}
+
+.addon {
+  padding: 0 20%;
+  padding: 115px;
+
+  text-align: center;
+
+  > p {
+    font-size: 25px;
+    font-weight: 300;
+
+    text-align: center;
+
+    max-width: 40%;
+
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+
+  > div {
+    margin-top: 41px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 130px;
+
+    > div {
+      max-width: 517px;
+      width: 100%;
+
+      > header {
+        padding-bottom: 55px;
+
+        border-bottom: 5px solid #000;
+      }
+
+      > main {
+        margin-top: 33px;
+
+        > h1 {
+          font-size: 30px;
+          font-weight: 700;
+          margin-bottom: 13px;
+        }
+
+        > p {
+          text-align: justify;
+          text-align-last: left;
+
+          font-size: 25px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+#addon-one {
+  background-color: #E2E0B1;
+
+  color: #383838;
+}
+
+#addon-two {
+  background-color: #383838;
+
+  color: #FFFFFF;
+
+  > div {
+    > div {
+      > header {
+        border-bottom-color: white;
+      }
+    }
+  }
+
+}
+
+#addon-three {
+  background-color: white;
+
+  color: #383838;
 }
